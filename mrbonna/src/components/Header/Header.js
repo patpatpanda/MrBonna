@@ -32,7 +32,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <div className={styles.logoContainer}>
-          <span className={styles.logoText}>Bonnatösen</span>
+      
         </div>
 
         {/* Menuknapp för mobila enheter */}
@@ -46,11 +46,11 @@ export default function Header() {
         {/* Navigeringsmeny */}
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
           <Link href="/" onClick={closeMenu}>Hem</Link>
-          <Link href="/#about" onClick={closeMenu}>Om oss</Link>
+          
           <Link href="/menu" onClick={closeMenu}>Meny</Link>
           <Link href="/events" onClick={closeMenu}>Kommande event</Link>
-          <Link href="/#hour" onClick={closeMenu}>Öppettider/Kontakt</Link>
-          <Link href="/catering" onClick={closeMenu}>Catering</Link>
+       
+          <Link href="/Catering" onClick={closeMenu}>Catering</Link>
         </nav>
       </div>
     </header>

@@ -20,17 +20,21 @@ export default function BonnatosensMackor() {
 
       {/* Historien bakom Bonnatösens Mackor med video */}
       <section className={styles.historySection}>
-        <div className={styles.historyText}>
-          <p>
-            Bonnatösens Mackor grundades av en slump, men snabbt växte vår passion för att servera riktigt goda mackor och fika. Med inspiration från USA och en dos svensk kärlek är våra mackor perfekta för alla tillfällen.
-          </p>
-          <p>
-            Idag finns vi i Bryggeriområdet i Nora, där vi erbjuder allt från frukostmackor till rejäla lunchalternativ. Vårt fokus ligger på att använda lokala råvaror och skapa smaker som får dig att längta efter mer!
-          </p>
-        </div>
-        {/* Video istället för bild */}
-        <video className={styles.historyVideo} src="/images/film.mp4" autoPlay loop muted playsInline />
-      </section>
+  <div className={styles.historyText}>
+    <p>
+      Bonnatösens Mackor grundades av en slump, men snabbt växte vår passion för att servera riktigt goda mackor och fika. Med inspiration från USA och en dos svensk kärlek är våra mackor perfekta för alla tillfällen.
+    </p>
+    <p>
+      Idag finns vi i Bryggeriområdet i Nora, där vi erbjuder allt från frukostmackor till rejäla lunchalternativ. Vårt fokus ligger på att använda lokala råvaror och skapa smaker som får dig att längta efter mer!
+    </p>
+  </div>
+  <img
+    src="/images/lol.jpg" /* Ersätt med din bilds sökväg */
+    alt="Bonnatösens Mackor historia"
+    className={styles.historyImage}
+  />
+</section>
+
 
       {/* Utbud-sektion */}
       <section className={styles.menuSection}>
@@ -52,7 +56,7 @@ export default function BonnatosensMackor() {
             <h3>Veckans Soppa</h3>
             <p>En välsmakande soppa som varierar varje vecka. Fråga gärna om dagens special!</p>
           </div>
-        </div>
+        </div> 
       </section>
 
       {/* Catering och sociala medier */}
@@ -61,7 +65,15 @@ export default function BonnatosensMackor() {
         <p>
           Vi erbjuder Bonnatösens Mackor som catering för ditt event! Kontakta oss för mer information.
         </p>
-        <Link href="/contact" className={styles.cateringButton}>Beställ Catering</Link>
+       
+      <section className={styles.bookingSection}>
+        <h2 className={styles.sectionTitle}>Boka Oss</h2>
+        <p className={styles.bookingInfo}>
+          För att boka catering eller få en offert, vänligen kontakta oss via e-post eller telefon. Vi arbetar tillsammans med dig för att skapa en meny som passar just ditt event.
+        </p>
+        <p className={styles.contactInfo}>📧 Email: catering@bonnatosen.se</p>
+        <p className={styles.contactInfo}>📞 Telefon: 070-123 4567</p>
+      </section>
         <p className={styles.socialMediaText}>Följ oss på sociala medier för senaste nyheterna och öppettider!</p>
         <div className={styles.socialIcons}>
           <a href="https://www.instagram.com/bonnatosensmackor" target="_blank" rel="noopener noreferrer">@Bonnatosensmackor</a>

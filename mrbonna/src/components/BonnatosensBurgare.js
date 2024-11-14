@@ -14,23 +14,26 @@ export default function BonnatosensBurgare() {
           <h1 className={styles.heroTitle}>Bonnatösens Burgare</h1>
         </div>
         <p className={styles.heroText}>
-          Grundades av en slump år 2021 och är idag en självklar mötesplats för alla som älskar burgare med hjärta och smak!
+          Den självklara mötesplatsen för alla som älskar burgare med hjärta och smak!
         </p>
       </section>
 
       {/* Historien bakom Bonnatösens Burgare med video */}
       <section className={styles.historySection}>
-        <div className={styles.historyText}>
-          <p>
-            Bonnatösens Burgare grundades av en slump år 2021 då vi (Oskar & Hanna) sålde smashed burgers på Hannas föräldrars gård under Bergslagens loppishelg...
-          </p>
-          <p>
-            Idag har Bonnatösens burgare sin fasta punkt på vår nya gård som ligger precis i slutet av Flåsjön. Vi har hållit öppet några helger om året, men vi märker att efterfrågan är så stor...
-          </p>
-        </div>
-        {/* Video istället för bild */}
-        <video className={styles.historyVideo} src="/images/film.mp4" autoPlay loop muted playsInline />
-      </section>
+  <div className={styles.historyText}>
+    <p>
+      Bonnatösens Burgare grundades av en slump år 2021 då vi (Oskar & Hanna) sålde smashed burgers på Hannas föräldrars gård under Bergslagens loppishelg...
+    </p>
+    <p>
+      Idag har Bonnatösens Burgare sin fasta punkt på vår nya gård som ligger precis i slutet av Flåsjön. Vi har hållit öppet några helger om året, men vi märker att efterfrågan är så stor...
+    </p>
+  </div>
+  <img
+    src="/images/lol.jpg" /* Ersätt med din bild */
+    alt="Bonnatösens Burgare historia"
+    className={styles.historyImage}
+  />
+</section>
 
       {/* Menysektion */}
       <section  className={styles.menuSection}>
@@ -61,7 +64,15 @@ export default function BonnatosensBurgare() {
         <p>
           Vi erbjuder Bonnatösens Burgare som catering för ditt event! Kontakta oss för mer information.
         </p>
-        <Link href="/contact" className={styles.cateringButton}>Beställ Catering</Link>
+       
+      <section className={styles.bookingSection}>
+        <h2 className={styles.sectionTitle}>Boka Oss</h2>
+        <p className={styles.bookingInfo}>
+          För att boka catering eller få en offert, vänligen kontakta oss via e-post eller telefon. Vi arbetar tillsammans med dig för att skapa en meny som passar just ditt event.
+        </p>
+        <p className={styles.contactInfo}>📧 Email: catering@bonnatosen.se</p>
+        <p className={styles.contactInfo}>📞 Telefon: 070-123 4567</p>
+      </section>
         <p className={styles.socialMediaText}>Följ oss på sociala medier för senaste nyheterna och öppettider!</p>
         <div className={styles.socialIcons}>
           <a href="https://www.instagram.com/bonnatosensburgare" target="_blank" rel="noopener noreferrer">@bonnatosensburgare</a>

@@ -1,0 +1,117 @@
+/* Hero.module.css */
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffd1dc 0%, #ffe5b4 100%);
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  height: 100vh;
+  animation: fadeInZoom 1s ease-out forwards;
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+/* Container for title and icons */
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* More space between title and icons */
+  margin-bottom: 2rem;
+}
+
+.heroIcon {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #ffcc33, #ff6699);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  animation: textFadeIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation for a smooth fade-in for the title */
+@keyframes textFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.contentBox {
+  background-color: #f4a261;
+  padding: 2.5rem;
+  border-radius: 20px;
+  color: #fff;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin: 1.5rem 0;
+  animation: slideIn 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroText {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  color: #fffbf0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.heroButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcc33;
+  color: #4f4f4f;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.heroButton:hover {
+  background-color: #e76f51;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}

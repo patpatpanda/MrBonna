@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <Header /> {/* Lägg till Header här för att göra den global */}
        
         {children}
-        <Footer /> {/* Lägg till footern här */}
+        
       </body>
     </html>
   );
