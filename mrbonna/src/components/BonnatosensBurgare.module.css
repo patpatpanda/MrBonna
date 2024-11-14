@@ -14,6 +14,17 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-bottom: 5px solid #ffddc1; /* Lätt avdelning under hero */
 }
+/* BonnatosensBurgare.module.css */
+
+.historyVideo {
+  flex: 1;
+  max-width: 600px; /* Sätter en maxbredd som motsvarar bildens ursprungliga storlek */
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centrera videon */
+}
 
 .heroContent {
   display: flex;

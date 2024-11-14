@@ -18,7 +18,7 @@ export default function BonnatosensBurgare() {
         </p>
       </section>
 
-      {/* Historien bakom Bonnatösens Burgare */}
+      {/* Historien bakom Bonnatösens Burgare med video */}
       <section className={styles.historySection}>
         <div className={styles.historyText}>
           <p>
@@ -28,11 +28,12 @@ export default function BonnatosensBurgare() {
             Idag har Bonnatösens burgare sin fasta punkt på vår nya gård som ligger precis i slutet av Flåsjön. Vi har hållit öppet några helger om året, men vi märker att efterfrågan är så stor...
           </p>
         </div>
-        <img src="/images/gård.webp" alt="Bild av gården" className={styles.historyImage} />
+        {/* Video istället för bild */}
+        <video className={styles.historyVideo} src="/images/film.mp4" autoPlay loop muted playsInline />
       </section>
 
       {/* Menysektion */}
-      <section className={styles.menuSection}>
+      <section  className={styles.menuSection}>
         <h2 className={styles.menuTitle}>Våra Burgare</h2>
         <div className={styles.menuItems}>
           <div className={styles.menuItem}>

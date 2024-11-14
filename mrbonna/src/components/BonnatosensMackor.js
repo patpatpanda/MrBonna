@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function BonnatosensMackor() {
   return (
-    <div className={styles.mackorContainer}>
+    <div  className={styles.mackorContainer}>
       
       {/* Hero-sektionen med ikon */}
       <section className={styles.heroSection}>
@@ -18,7 +18,7 @@ export default function BonnatosensMackor() {
         </p>
       </section>
 
-      {/* Historien bakom Bonnatösens Mackor */}
+      {/* Historien bakom Bonnatösens Mackor med video */}
       <section className={styles.historySection}>
         <div className={styles.historyText}>
           <p>
@@ -28,7 +28,8 @@ export default function BonnatosensMackor() {
             Idag finns vi i Bryggeriområdet i Nora, där vi erbjuder allt från frukostmackor till rejäla lunchalternativ. Vårt fokus ligger på att använda lokala råvaror och skapa smaker som får dig att längta efter mer!
           </p>
         </div>
-        <img src="/images/bakery.jpg" alt="Bild av mackstället" className={styles.historyImage} />
+        {/* Video istället för bild */}
+        <video className={styles.historyVideo} src="/images/film.mp4" autoPlay loop muted playsInline />
       </section>
 
       {/* Utbud-sektion */}

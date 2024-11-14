@@ -27,15 +27,15 @@ export default function Hero() {
         </p>
         <div className={styles.buttonContainer}>
           <Link href="/burgare" className={styles.heroButton}>
-            <span className={styles.icon}>🍔</span>
+        
             <span>Bonnatösens Burgare</span>
           </Link>
           <Link href="/mackor" className={styles.heroButton}>
-            <span className={styles.icon}>🥪</span>
+          
             <span>Bonnatösens Mackor</span>
           </Link>
-          <Link href="/event" className={styles.heroButton}>
-            <span className={styles.icon}>🚚</span>
+          <Link href="/events" className={styles.heroButton}>
+          
             <span>Bonnatösens Event & Catering</span>
           </Link>
         </div>

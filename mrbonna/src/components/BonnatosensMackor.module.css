@@ -7,12 +7,12 @@
 
 /* Hero-sektion med ikon */
 .heroSection {
-  background-color: #e3ffc4; /* Ljusgrön för en ny känsla */
+  background-color: #FFEBCC; /* Mjuk persika för en varm känsla */
   padding: 6rem 2rem;
   text-align: center;
   color: #4f4f4f;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 5px solid #c4ffc4; /* Mjuk grön avdelare */
+  border-bottom: 5px solid #FFDAB3; /* Subtil kontrastlinje */
 }
 
 .heroContent {
@@ -24,13 +24,24 @@
 .heroIcon {
   width: 200px;
   height: 100px;
-  margin-bottom: 1rem;
 }
+/* BonnatosensMackor.module.css */
+
+.historyVideo {
+  flex: 1;
+  max-width: 600px; /* Sätter en maxbredd som motsvarar bildens ursprungliga storlek */
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centrera videon */
+}
+
 
 .heroTitle {
   font-size: 3.5rem;
   font-family: 'Comic Sans MS', cursive;
-  color: #8fbf63;
+  color: #FF7E5F; /* Dämpad korall för en vintage-känsla */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -45,7 +56,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 3rem 2rem;
-  background-color: #fef7e1;
+  background-color: #FFF3E0; /* Ljus vanilj för mjuk bakgrund */
 }
 
 .historyText {
@@ -65,7 +76,7 @@
 
 /* Meny-sektion */
 .menuSection {
-  background-color: #e3ffc4;
+  background-color: #FFEBCC; /* Mjuk persika för ett enhetligt utseende */
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -85,7 +96,7 @@
 .menuItem {
   width: 280px;
   padding: 2rem;
-  background-color: #d9ffd9;
+  background-color: #FFE5CC; /* Ljus aprikos för lätt kontrast */
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -106,7 +117,7 @@
 
 /* Catering och sociala medier */
 .cateringSection {
-  background-color: #b7e3b2;
+  background-color: #FFCC99; /* Varm, dämpad orange för en inbjudande känsla */
   padding: 3rem 2rem;
   text-align: center;
   color: #fff;
@@ -117,7 +128,7 @@
   padding: 0.8rem 1.5rem;
   font-size: 1.2rem;
   color: #fff;
-  background-color: #8fbf63;
+  background-color: #FF7E5F; /* Matchar hero-titelns korallfärg */
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -127,7 +138,7 @@
 }
 
 .cateringButton:hover {
-  background-color: #6e9e53;
+  background-color: #D9644A; /* Mörkare korall för hover-effekt */
 }
 
 .socialMediaText {
@@ -148,7 +159,6 @@
 
 /* ========== Responsiv Design ========== */
 
-/* Anpassning för tabletter och mindre skärmar */
 @media (max-width: 768px) {
   .heroSection {
     padding: 4rem 1.5rem;
@@ -168,7 +178,7 @@
   }
 
   .historySection {
-    flex-direction: column; /* Stapla text och bild vertikalt */
+    flex-direction: column;
     align-items: center;
   }
 
@@ -192,7 +202,6 @@
   }
 }
 
-/* Anpassning för mobilskärmar */
 @media (max-width: 480px) {
   .heroSection {
     padding: 3rem 1rem;
